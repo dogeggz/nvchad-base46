@@ -193,7 +193,7 @@ M.toggle_theme = function()
   end
 
   g.icon_toggled = not g.icon_toggled
-  g.toggle_theme_icon = g.icon_toggled and "   " or "   "
+  g.toggle_theme_icon = g.icon_toggled and "  " or "  "
 
   opts.theme = (themes[1] == opts.theme and themes[2]) or themes[1]
 

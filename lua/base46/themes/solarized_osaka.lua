@@ -1,17 +1,19 @@
 -- Credits to original https://github.com/craftzdog/solarized-osaka.nvim
 -- This is a modified version of it
 
----@type Base46Table
 local M = {}
 
 M.base_30 = {
-  white = "#9eabac",
-  darker_black = "#011923",
-  black = "#011219",
-  black2 = "#02202D",
-  one_bg = "#022736",
-  one_bg2 = "#03394F",
+
+  darker_black = "#121721",
+  black = "#0B0E14",
+  black2 = "#151C28",
+  one_bg = "#364563",
+  one_bg2 = "#3E5074",
   one_bg3 = "#044A67",
+  statusline_bg = "#0B0E14",
+  lightbg = "#151C28",
+  white = "#abb2bf",
   grey = "#405055",
   grey_fg = "#47585E",
   grey_fg2 = "#4F6369",
@@ -31,8 +33,6 @@ M.base_30 = {
   teal = "#519ABA",
   orange = "#C84C16",
   cyan = "#2aa198",
-  statusline_bg = "#02202D",
-  lightbg = "#03394F",
   pmenu_bg = "#29a298",
   folder_bg = "#268bd3",
 }
@@ -42,7 +42,7 @@ M.base_16 = {
   base01 = M.base_30.one_bg,
   base02 = M.base_30.one_bg2,
   base03 = M.base_30.one_bg3,
-  base04 = "#1b4651",
+  base04 = "#1a6397",
   base05 = M.base_30.white,
   base06 = "#eee8d5",
   base07 = "#fdf6e3",
@@ -52,21 +52,21 @@ M.base_16 = {
   base0B = "#29a298",
   base0C = "#c94c16",
   base0D = "#268bd2",
-  base0E = "#849900",
+  base0E = "#29a298",
   base0F = "#c94c16",
 }
 
 M.polish_hl = {
   treesitter = {
-    ["@constant"] = { fg = "#29a298" }, -- could be deleted if #284 get merged
-    ["@operator"] = { fg = "#849900" },
+    ["@constant"] = { fg = "#5995a6" }, -- could be deleted if #284 get merged
+    ["@operator"] = { fg = "#5995a6" },
     ["@variable.parameter"] = { fg = "#c94c16" },
     ["@function.builtin"] = { fg = "#c94c16" },
   },
 
   syntax = {
-    Include = { fg = "#849900" },
-    Tag = { fg = "#849900" },
+    Include = { fg = "#c94c16" },
+    Tag = { fg = "#29a298" },
   },
 
   defaults = {
@@ -74,10 +74,10 @@ M.polish_hl = {
   },
 
   lsp = {
-    DiagnosticVirtualTextError = { bg = "#570f0e", fg = M.base_30.red },
-    DiagnosticVirtualTextWarn = { bg = "#332700", fg = M.base_30.yellow },
-    DiagnosticVirtualTextInfo = { bg = "#0f3856", fg = M.base_30.blue },
-    DiagnosticVirtualTextHint = { bg = "#103a3c", fg = M.base_30.purple },
+    DiagnosticVirtualTextError = { bg = "#57040e", fg = "#bc2e2c" },
+    DiagnosticVirtualTextInfo = { bg = "#042034", fg = "#016ab8" },
+    DiagnosticVirtualTextWarn = { bg = "#1c1e45", fg = "#494fb6" },
+    DiagnosticVirtualTextHint = { bg = "#2b3300", fg = "#859901" },
   },
 }
 
